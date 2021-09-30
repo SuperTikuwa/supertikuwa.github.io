@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "https://supertikuwa.github.io/tikuwa.monster/"
+baseURL = "https://tikuwa.monster/"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
