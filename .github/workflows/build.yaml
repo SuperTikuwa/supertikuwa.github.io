@@ -13,11 +13,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Change Workspace
+        run: cd workspace
+
       # Node.js環境のセットアップを行う
       - name: setup node
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: '20.10.0'
 
       # npm install の際にキャッシュを使うよう設定
       - name: Cache dependencies
