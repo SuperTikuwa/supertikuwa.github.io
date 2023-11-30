@@ -8,7 +8,7 @@
   // コンテナのどこにワークスペースを配置するかの指定。全リポジトリ共通にしてます。
   "workspaceFolder": "/workspace",
   // ゲストOSでの実行ユーザ。全リポジトリ共通にしてます。
-  "remoteUser": "vscode",
+  "remoteUser": "node",
   // ゲストOSの設定を変更する場合に利用する設定
   "customizations": {
     // VSCodeのデフォルトの設定を変更します

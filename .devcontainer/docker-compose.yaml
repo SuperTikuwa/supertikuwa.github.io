@@ -1,6 +1,6 @@
 version: "3"
 services:
-  python: # `devcontainer.json`の'service'と一致させる
+  supertikuwa.github.io: # `devcontainer.json`の'service'と一致させる
     container_name: "supertikuwa.github.io" # コンテナ名
     hostname: "supertikuwa.github.io" # ホスト名.ゲストOSのシェルに表示されるので指定している
 
@@ -14,3 +14,6 @@ services:
         source: ../workspace # ホストの`workspace`ディレクトリを指定
         target: /workspace # ゲストの`/workspace`にマウントさせる
       - node_modules:/workspace/node_modules
+
+volumes:
+  node_modules:
