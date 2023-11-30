@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - main
+defaults:
+  run:
+    working-directory: workspace
 
 jobs:
   build-deploy:
@@ -12,9 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Change Workspace
-        run: cd workspace
 
       # Node.js環境のセットアップを行う
       - name: setup node
